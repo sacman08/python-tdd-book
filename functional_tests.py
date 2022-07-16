@@ -11,7 +11,7 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox()
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         self.browser.quit()
 
     def test_can_start_a_list_and_restrieve_it_later(self):
